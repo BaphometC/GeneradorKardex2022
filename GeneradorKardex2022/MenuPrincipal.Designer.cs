@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(447, 19);
+            this.label1.Location = new System.Drawing.Point(395, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(479, 33);
             this.label1.TabIndex = 0;
@@ -53,8 +53,9 @@
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Location = new System.Drawing.Point(12, 76);
             this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.Size = new System.Drawing.Size(1352, 628);
+            this.dgvDatos.Size = new System.Drawing.Size(1248, 497);
             this.dgvDatos.TabIndex = 1;
+            this.dgvDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatos_CellContentClick);
             // 
             // btnKardexSUNAT
             // 
@@ -67,7 +68,7 @@
             this.btnKardexSUNAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexSUNAT.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexSUNAT.ForeColor = System.Drawing.Color.White;
-            this.btnKardexSUNAT.Location = new System.Drawing.Point(1000, 759);
+            this.btnKardexSUNAT.Location = new System.Drawing.Point(890, 594);
             this.btnKardexSUNAT.Name = "btnKardexSUNAT";
             this.btnKardexSUNAT.Size = new System.Drawing.Size(161, 55);
             this.btnKardexSUNAT.TabIndex = 2;
@@ -86,7 +87,7 @@
             this.btnKardexPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexPI.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexPI.ForeColor = System.Drawing.Color.White;
-            this.btnKardexPI.Location = new System.Drawing.Point(437, 759);
+            this.btnKardexPI.Location = new System.Drawing.Point(412, 594);
             this.btnKardexPI.Name = "btnKardexPI";
             this.btnKardexPI.Size = new System.Drawing.Size(161, 55);
             this.btnKardexPI.TabIndex = 3;
@@ -105,7 +106,7 @@
             this.btnKardexPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexPT.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexPT.ForeColor = System.Drawing.Color.White;
-            this.btnKardexPT.Location = new System.Drawing.Point(716, 759);
+            this.btnKardexPT.Location = new System.Drawing.Point(646, 594);
             this.btnKardexPT.Name = "btnKardexPT";
             this.btnKardexPT.Size = new System.Drawing.Size(161, 55);
             this.btnKardexPT.TabIndex = 4;
@@ -124,7 +125,7 @@
             this.btnKardexMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexMP.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexMP.ForeColor = System.Drawing.Color.White;
-            this.btnKardexMP.Location = new System.Drawing.Point(173, 759);
+            this.btnKardexMP.Location = new System.Drawing.Point(166, 594);
             this.btnKardexMP.Name = "btnKardexMP";
             this.btnKardexMP.Size = new System.Drawing.Size(161, 55);
             this.btnKardexMP.TabIndex = 5;
@@ -143,19 +144,19 @@
             this.btnImportarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportarDatos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImportarDatos.ForeColor = System.Drawing.Color.White;
-            this.btnImportarDatos.Location = new System.Drawing.Point(12, 39);
+            this.btnImportarDatos.Location = new System.Drawing.Point(1148, 39);
             this.btnImportarDatos.Name = "btnImportarDatos";
             this.btnImportarDatos.Size = new System.Drawing.Size(112, 31);
             this.btnImportarDatos.TabIndex = 6;
             this.btnImportarDatos.Text = "Importar datos";
             this.btnImportarDatos.TextColor = System.Drawing.Color.White;
             this.btnImportarDatos.UseVisualStyleBackColor = false;
+            this.btnImportarDatos.Click += new System.EventHandler(this.btnImportarDatos_Click);
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1376, 865);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1274, 661);
             this.Controls.Add(this.btnImportarDatos);
             this.Controls.Add(this.btnKardexMP);
             this.Controls.Add(this.btnKardexPT);
@@ -163,8 +164,11 @@
             this.Controls.Add(this.btnKardexSUNAT);
             this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1290, 700);
             this.Name = "Menu";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

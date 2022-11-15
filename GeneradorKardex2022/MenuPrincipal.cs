@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,6 +16,38 @@ namespace GeneradorKardex2022
         public Menu()
         {
             InitializeComponent();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btnImportarDatos_Click(object sender, EventArgs e)
+        {
+            Task otask = new Task(Algo);
+            otask.Start();
+            await otask;
+        }
+
+        public void Algo()
+        {
+            Thread.Sleep(3000);
+        }
+
+        public void Show()
+        {
+
+        }
+
+        public void Hide()
+        {
+
+        }
+
+        private void dgvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
