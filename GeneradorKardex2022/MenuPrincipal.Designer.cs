@@ -35,6 +35,7 @@
             this.btnKardexPT = new GeneradorKardex.RJButton();
             this.btnKardexMP = new GeneradorKardex.RJButton();
             this.btnImportarDatos = new GeneradorKardex.RJButton();
+            this.btnReporteCostoUnico = new GeneradorKardex.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +51,9 @@
             // 
             // dgvDatos
             // 
+            this.dgvDatos.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.GridColor = System.Drawing.Color.DarkSlateGray;
             this.dgvDatos.Location = new System.Drawing.Point(12, 76);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.Size = new System.Drawing.Size(1248, 497);
@@ -68,7 +71,7 @@
             this.btnKardexSUNAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexSUNAT.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexSUNAT.ForeColor = System.Drawing.Color.White;
-            this.btnKardexSUNAT.Location = new System.Drawing.Point(890, 594);
+            this.btnKardexSUNAT.Location = new System.Drawing.Point(797, 594);
             this.btnKardexSUNAT.Name = "btnKardexSUNAT";
             this.btnKardexSUNAT.Size = new System.Drawing.Size(161, 55);
             this.btnKardexSUNAT.TabIndex = 2;
@@ -87,7 +90,7 @@
             this.btnKardexPI.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexPI.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexPI.ForeColor = System.Drawing.Color.White;
-            this.btnKardexPI.Location = new System.Drawing.Point(412, 594);
+            this.btnKardexPI.Location = new System.Drawing.Point(319, 594);
             this.btnKardexPI.Name = "btnKardexPI";
             this.btnKardexPI.Size = new System.Drawing.Size(161, 55);
             this.btnKardexPI.TabIndex = 3;
@@ -106,7 +109,7 @@
             this.btnKardexPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexPT.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexPT.ForeColor = System.Drawing.Color.White;
-            this.btnKardexPT.Location = new System.Drawing.Point(646, 594);
+            this.btnKardexPT.Location = new System.Drawing.Point(553, 594);
             this.btnKardexPT.Name = "btnKardexPT";
             this.btnKardexPT.Size = new System.Drawing.Size(161, 55);
             this.btnKardexPT.TabIndex = 4;
@@ -125,7 +128,7 @@
             this.btnKardexMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKardexMP.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKardexMP.ForeColor = System.Drawing.Color.White;
-            this.btnKardexMP.Location = new System.Drawing.Point(166, 594);
+            this.btnKardexMP.Location = new System.Drawing.Point(73, 594);
             this.btnKardexMP.Name = "btnKardexMP";
             this.btnKardexMP.Size = new System.Drawing.Size(161, 55);
             this.btnKardexMP.TabIndex = 5;
@@ -153,10 +156,31 @@
             this.btnImportarDatos.UseVisualStyleBackColor = false;
             this.btnImportarDatos.Click += new System.EventHandler(this.btnImportarDatos_Click);
             // 
+            // btnReporteCostoUnico
+            // 
+            this.btnReporteCostoUnico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnReporteCostoUnico.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnReporteCostoUnico.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnReporteCostoUnico.BorderRadius = 9;
+            this.btnReporteCostoUnico.BorderSize = 0;
+            this.btnReporteCostoUnico.FlatAppearance.BorderSize = 0;
+            this.btnReporteCostoUnico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteCostoUnico.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteCostoUnico.ForeColor = System.Drawing.Color.White;
+            this.btnReporteCostoUnico.Location = new System.Drawing.Point(1029, 594);
+            this.btnReporteCostoUnico.Name = "btnReporteCostoUnico";
+            this.btnReporteCostoUnico.Size = new System.Drawing.Size(161, 55);
+            this.btnReporteCostoUnico.TabIndex = 7;
+            this.btnReporteCostoUnico.Text = "Reporte Costo Unico";
+            this.btnReporteCostoUnico.TextColor = System.Drawing.Color.White;
+            this.btnReporteCostoUnico.UseVisualStyleBackColor = false;
+            // 
             // Menu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1274, 661);
+            this.Controls.Add(this.btnReporteCostoUnico);
             this.Controls.Add(this.btnImportarDatos);
             this.Controls.Add(this.btnKardexMP);
             this.Controls.Add(this.btnKardexPT);
@@ -184,6 +208,7 @@
         private GeneradorKardex.RJButton btnKardexPT;
         private GeneradorKardex.RJButton btnKardexMP;
         private GeneradorKardex.RJButton btnImportarDatos;
+        private GeneradorKardex.RJButton btnReporteCostoUnico;
     }
 }
 
