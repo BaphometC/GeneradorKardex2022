@@ -153,9 +153,8 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1376, 865);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnImportarDatos);
             this.Controls.Add(this.btnKardexMP);
             this.Controls.Add(this.btnKardexPT);
